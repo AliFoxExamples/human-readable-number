@@ -73,5 +73,5 @@ module.exports = function toReadable (number) {
         }
     }
 
-    return parser(number).trim();
+    return number? parser(number).trim(): 'zero';
 }
